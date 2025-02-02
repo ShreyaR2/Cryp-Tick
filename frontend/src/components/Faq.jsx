@@ -6,26 +6,26 @@ const FAQAccordion = () => {
 
   const faqItems = [
     {
-      question: 'How do I schedule a service?',
-      answer: 'You can schedule a service through our online platform or mobile app by selecting your preferred time and service type.'
+      question: 'What is a pump and dump scheme?',
+      answer: 'A pump and dump is a fraudulent trading practice where the price of a cryptocurrency is artificially inflated ("pumped") through misleading or false information, followed by a sudden sell-off ("dump") that causes the price to crash.'
     },
     {
-      question: 'What areas do you cover?',
-      answer: 'We currently service all major cities within a 50-mile radius. Check your postal code in our coverage area page.'
+      question: 'How can users benefit from identifying pump and dump schemes?',
+      answer: 'By spotting pump and dump schemes, users can avoid investing in manipulated assets, protecting their investments from sudden losses.'
     },
     {
-      question: 'What payment methods do you accept?',
-      answer: 'We accept all major credit cards, PayPal, and Apple Pay. Offline payments are also accepted directly to the mechanic.'
+      question: 'Can this system prevent financial losses in cryptocurrency trading?',
+      answer: 'While it cannot guarantee complete protection, identifying these schemes helps users make more informed decisions and reduce the risk of financial loss.'
     },
     {
-      question: 'How long do repairs usually take?',
-      answer: 'Most common repairs take 2-4 hours. Complex issues may require overnight diagnostics. We provide time estimates upfront.'
+      question: 'What are the key indicators or patterns that indicate these schemes?',
+      answer: 'Look for rapid price spikes with little to no news or fundamental changes, an unusually high volume of trades, and coordinated social media activity promoting the coin.'
     }
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-8 py-12">
-      <h2 className="text-3xl font-semibold text-center mb-8">Frequently Asked Questions</h2>
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-radial from-[#451795] to-[#12032b]">
+      <h2 className="text-3xl font-bold text-center mb-12 text-white">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {faqItems.map((item, index) => (
           <div 
@@ -35,14 +35,14 @@ const FAQAccordion = () => {
             <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
               className={`w-full px-6 py-4 text-left rounded-lg flex items-center justify-between
-                transition-all duration-200 hover:shadow-lg hover:delay-150
-                ${openIndex === index ? 'bg-gray-50 shadow-sm' : 'bg-white shadow'}`}
+                transition-all duration-200 hover:bg-white/5
+                ${openIndex === index ? 'bg-white/10 backdrop-blur-lg' : 'bg-white/5 backdrop-blur-sm'}`}
             >
-              <span className="text-lg font-medium text-gray-700">{item.question}</span>
+              <span className="text-lg font-medium text-white">{item.question}</span>
               {openIndex === index ? (
-                <FiChevronUp className="w-6 h-6 text-gray-600 ml-4 flex-shrink-0" />
+                <FiChevronUp className="w-6 h-6 text-[#00ff88] ml-4 flex-shrink-0" />
               ) : (
-                <FiChevronDown className="w-6 h-6 text-gray-600 ml-4 flex-shrink-0" />
+                <FiChevronDown className="w-6 h-6 text-gray-300 ml-4 flex-shrink-0" />
               )}
             </button>
             
@@ -50,7 +50,7 @@ const FAQAccordion = () => {
               className={`overflow-hidden transition-all duration-300 ease-in-out
                 ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
             >
-              <div className="px-6 py-4 text-gray-600 border-t border-gray-100">
+              <div className="px-6 py-4 text-gray-300 border-l-2 border-[#00ff88] ml-4">
                 {item.answer}
               </div>
             </div>

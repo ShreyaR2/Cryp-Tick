@@ -1,5 +1,4 @@
 import React from 'react';
-// import Laptop from '../assets/laptop.jpg';
 import animationData from '../assets/animation.json';
 import Lottie from 'react-lottie';
 import { Link } from 'react-router-dom';
@@ -24,7 +23,7 @@ const HeroSection = () => {
             <div className='flex flex-col justify-center'>
                 <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>Detect Pump & Dump</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id quidem ducimus eum hic? Dolore vitae repellendus veritatis harum illum praesentium, adipisci doloribus obcaecati. Facere ab odit porro fugiat nam.
+                CrypTick is a tool designed to identify potential pump-and-dump schemes in the memecoin market by analyzing trading patterns using AI/ML models and integrating blockchain data for transparency. 
                     </p>
                     <div>
                         <Link to='/home'>

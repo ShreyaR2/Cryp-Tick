@@ -5,7 +5,7 @@ import LandingPage from "./pages/LandingPage"
 import Home from "./pages/Home"
 import Coin from "./pages/Coin"
 import AllCoins from "./pages/AllCoins"
-import AboutUs from "./pages/AboutUs"
+import Team from "./pages/Team"
 import NotFound from "./pages/NotFound";
 
 
@@ -18,7 +18,7 @@ const App = () => {
                 <Route path="home" element={<Home/>}/>
                 <Route path="coin" element={<AllCoins/>}/>
                 <Route path="coin/:symbol" element={<Coin/>}/>
-                <Route path="aboutus" element={<AboutUs/>}/>
+                <Route path="team" element={<Team/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Route>
         )

@@ -1,11 +1,9 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-const AboutUs = () => {
+const Team = () => {
   const team = [
     {
       name: "5th Mentee",
-      role: "Crazy Coder",
-      bio: "Carried the whole project.",
       links: {
         linkedin: "#",
         github: "#"
@@ -14,8 +12,6 @@ const AboutUs = () => {
     },
     {
       name: "ChatGPT",
-      role: "Best Coder",
-      bio: "Project would not have been completed without bro",
       links: {
         linkedin: "#",
         github: "#"
@@ -23,44 +19,36 @@ const AboutUs = () => {
       image: "https://www.edigitalagency.com.au/wp-content/uploads/ChatGPT-logo-PNG-medium-size-white-green-background.png"
     },
     {
-      name: "John Doe",
-      role: "CEO & Founder",
-      bio: "Visionary leader with 10+ years in tech innovation and strategic growth.",
+      name: "Shreya Rajeev",
       links: {
-        linkedin: "#",
-        github: "#"
+        linkedin: "https://www.linkedin.com/in/shreya-r-144922297/",
+        github: "https://github.com/ShreyaR2"
       },
-      image: "/images/john-doe.jpg" // Update with actual image path
+      image: "/shreya.jpg" // Update with actual image path
     },
     {
-      name: "Jane Smith",
-      role: "CTO",
-      bio: "Tech architect specializing in scalable solutions and system optimization.",
+      name: "Anagha Puvathingal",
       links: {
-        linkedin: "#",
-        github: "#"
+        linkedin: "https://www.linkedin.com/in/anagha-puvathingal-4015a734a/",
+        github: "https://github.com/anaghapuv"
       },
-      image: "/images/jane-smith.jpg"
+      image: "/anagha.jpg"
     },
     {
-      name: "Mike Johnson",
-      role: "Lead Developer",
-      bio: "Full-stack expert focused on clean code and efficient workflows.",
+      name: "Carol Chopde",
       links: {
-        linkedin: "#",
-        github: "#"
+        linkedin: "https://www.linkedin.com/in/carol-chopde-56179434a/",
+        github: "https://github.com/CarolChopde"
       },
-      image: "/images/mike-johnson.jpg"
+      image: "/carol.jpg"
     },
     {
-      name: "Sarah Williams",
-      role: "Product Manager",
-      bio: "Customer-focused strategist bridging business needs with technical execution.",
+      name: "Niharika Hariharan",
       links: {
-        linkedin: "#",
-        github: "#"
+        linkedin: "https://www.linkedin.com/in/niharika-hariharan-0437b2336/",
+        github: "https://github.com/niharikah005"
       },
-      image: "/images/sarah-williams.jpg"
+      image: "/niharika.jpg"
     }
   ];
 
@@ -88,10 +76,8 @@ const AboutUs = () => {
                 {/* Member Info */}
                 <div className="text-center">
                   <h3 className="text-xl font-semibold text-white">{member.name}</h3>
-                  <p className="text-[#00ff88] text-sm font-medium mt-1">{member.role}</p>
                 </div>
                 
-                <p className="text-gray-300 text-sm text-center leading-relaxed">{member.bio}</p>
                 
                 {/* Social Links */}
                 <div className="flex space-x-4 pt-4">
@@ -121,4 +107,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Team;

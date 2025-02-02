@@ -23,8 +23,8 @@ const Navbar = () => {
         <Link to={`/coin`}>
          <li className='font-semibold text-xl px-4 py-3'>All Coins</li>
          </Link>
-        <Link to={`/aboutus`}>
-         <li className='font-semibold text-xl px-4 py-3'>About Us</li>
+        <Link to={`/team`}>
+         <li className='font-semibold text-xl px-4 py-3'>Team</li>
          </Link>
       </ul>
 
@@ -48,8 +48,8 @@ const Navbar = () => {
         <Link to={`/coin`}>
         <li className='p-4 border-b font-inter border-gray-600 text-[#fff]'>All Coins</li>
         </Link>
-        <Link to={`/aboutus`}>
-        <li className='p-4 border-b font-inter border-gray-600 text-[#fff]'>About Us</li>
+        <Link to={`/team`}>
+        <li className='p-4 border-b font-inter border-gray-600 text-[#fff]'>Team</li>
         </Link>
       </ul>
     </div>

@@ -82,7 +82,7 @@ const CryptoChart = ({ tokenData, coinData }) => {
               ticks: {
                 callback: function (value, index, values) {
                   const date = chartData.labels[index];
-                  return date.split(" ")[0]; // Show only date on x-axis
+                  return date.split(" ")[0]; 
                 },
               },
             },
@@ -102,7 +102,7 @@ const CryptoChart = ({ tokenData, coinData }) => {
     setTimeout(() => {
       setIsTyping(false);
       setShowAnalysis(true);
-    }, 1000); // Adjust this to match ReactTyped duration
+    }, 16000); 
   };
 
 
@@ -136,7 +136,6 @@ const CryptoChart = ({ tokenData, coinData }) => {
         ))}
       </div>
 
-      {/* Chart + Analysis Section */}
       <h1 className="text-lg text-center font-semibold mb-2">
         Last 48 hrs data
       </h1>
@@ -156,17 +155,16 @@ const CryptoChart = ({ tokenData, coinData }) => {
             Show Market Analysis for last 48 hours
           </button>
 
-          {/* ReactTyped Animation */}
 
           {isTyping && !showAnalysis ? (
             <ReactTyped
               className="text-lg font-semibold text-indigo-800"
               strings={[
-                "Analyzing bruh...",
+                "Analyzing ...",
                 "Hacking into your MetaMask...",
                 "Fetching Sepolia ethers...",
               ]}
-              typeSpeed={80}
+              typeSpeed={70}
               backSpeed={40}
               showCursor={false}
               loop={false}
