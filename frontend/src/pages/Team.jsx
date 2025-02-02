@@ -4,6 +4,7 @@ const Team = () => {
   const team = [
     {
       name: "5th Mentee",
+      role: "God",
       links: {
         linkedin: "#",
         github: "#"
@@ -12,6 +13,7 @@ const Team = () => {
     },
     {
       name: "ChatGPT",
+      role: "God pt2",
       links: {
         linkedin: "#",
         github: "#"
@@ -20,6 +22,7 @@ const Team = () => {
     },
     {
       name: "Shreya Rajeev",
+      role: "Blockchain",
       links: {
         linkedin: "https://www.linkedin.com/in/shreya-r-144922297/",
         github: "https://github.com/ShreyaR2"
@@ -28,6 +31,7 @@ const Team = () => {
     },
     {
       name: "Anagha Puvathingal",
+      role: "ML",
       links: {
         linkedin: "https://www.linkedin.com/in/anagha-puvathingal-4015a734a/",
         github: "https://github.com/anaghapuv"
@@ -36,6 +40,7 @@ const Team = () => {
     },
     {
       name: "Carol Chopde",
+      role: "ML and Backend",
       links: {
         linkedin: "https://www.linkedin.com/in/carol-chopde-56179434a/",
         github: "https://github.com/CarolChopde"
@@ -44,6 +49,7 @@ const Team = () => {
     },
     {
       name: "Niharika Hariharan",
+      role: "Frontend and Backend",
       links: {
         linkedin: "https://www.linkedin.com/in/niharika-hariharan-0437b2336/",
         github: "https://github.com/niharikah005"
@@ -76,8 +82,9 @@ const Team = () => {
                 {/* Member Info */}
                 <div className="text-center">
                   <h3 className="text-xl font-semibold text-white">{member.name}</h3>
+                  <p className="text-[#00ff88] text-sm font-medium mt-1">{member.role}</p>
+
                 </div>
-                
                 
                 {/* Social Links */}
                 <div className="flex space-x-4 pt-4">

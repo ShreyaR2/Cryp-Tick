@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='mx-auto py-10 px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-8 text-gray-300 bg-radial from-[#451795] to-[#12032b]'>
       {/* Left Column */}
-      <div className='space-y-6'>
+      <div className='space-y-6 ml-17'>
         <Link to="/home">
           <img 
             src="/logo1.png" 
@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
 
       {/* Right Columns */}
-      <div className='lg:col-span-2 flex justify-end gap-5 items-center'>
+      <div className='lg:col-span-2 flex justify-end gap-10 items-center'>
         <Link 
           to="/home" 
           className='text-lg font-semibold text-[#00ff88] hover:text-white transition-colors'
@@ -59,7 +59,7 @@ const Footer = () => {
         </Link>
         <Link 
           to="/team" 
-          className='text-lg font-semibold text-[#00ff88] hover:text-white transition-colors'
+          className='text-lg font-semibold text-[#00ff88] mr-17 hover:text-white transition-colors'
         >
           Team
         </Link>

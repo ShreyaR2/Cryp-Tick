@@ -102,7 +102,7 @@ const CryptoChart = ({ tokenData, coinData }) => {
     setTimeout(() => {
       setIsTyping(false);
       setShowAnalysis(true);
-    }, 16000); 
+    }, 11000); 
   };
 
 
@@ -176,24 +176,24 @@ const CryptoChart = ({ tokenData, coinData }) => {
                   {pumpDump == 0 ? (
                     <div>
                       <ReactTyped
-                        className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2"
+                        className="md:text-xl sm:text-lg text-md font-semibold md:pl-4 pl-2"
                         strings={[`📉 The price has experienced rapid fluctuations over the last 48 hours, peaking at ${tokenData?.high_24h} and dropping to ${tokenData?.low_24h}. The market cap indicates this cryptocurrency is ${tokenData?.market_cap > 1000000000 ? 'a large-cap asset' : 'a mid-cap asset'}, but the sharp price movements and volatility suggest potential signs of a pump-and-dump scenario. Traders should proceed with caution.`
                         ]}
-                        typeSpeed={70}
+                        typeSpeed={20}
                         startDelay={500}
-                        cursorChar=" :)"
+                        cursorChar=" |"
                       />
                     </div>
                   ) : (
                     <div>
                       <ReactTyped
-                        className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2"
+                        className="md:text-xl sm:text-lg text-md font-semibold md:pl-4 pl-2"
                         strings={[`
                           📈 The price has shown stability in the last 48 hours, reaching a high of ${tokenData?.high_24h} and a low of ${tokenData?.low_24h}. With a market cap indicating this cryptocurrency is ${tokenData?.market_cap > 1000000000 ? 'a large-cap asset' : 'a mid-cap asset'}, the price fluctuations seem to align with natural market trends, suggesting there are no immediate concerns of a pump-and-dump.`
                         ]}
-                        typeSpeed={70}
+                        typeSpeed={20}
                         startDelay={500}
-                        cursorChar=" :)"
+                        cursorChar=" |"
                       />
                     </div>
                   )}
